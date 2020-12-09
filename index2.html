@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width,
+    initial-scale=1.8">
+<link rel="stylesheet" href="Style1.css">
+<title> Rammuzada </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="hero">
+                <h1>Rammusfera</h1>
+                <p>Rammus é deus</p>
+            </header>
+            <div class="cta cta1">
+                <p class="price">R$10,00</p>
+                <p>Só pra vc ganhar skinzinha</p>
+            </div>
+            <div class="cta cta2">
+                <p class="price">R$25,00</p>
+                <p>Apenas a Skin Ultimato</p>
+            </div>
+        </div>
+        <!-- ---- Menu ---- -->
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">§</span>
+                <span class="close">X</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">Passivo</a>
+                </li>
+                <li>
+                    <a href="">Bolinha</a>
+                </li>
+                <li>
+                    <a href="">Espinhos</a>
+                </li>
+                <li>
+                    <a href="">Provocar</a>
+                </li>
+                <li>
+                    <a href="">Tremor</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="features">
+            <div class="feature">
+            <img src="../rammus/icons/p1.png">
+                <h2>Passivos</h2>
+                <h3>Como é dito A melhor defesa é o ataque, sendo assim toda armadura de rammus se torna seu ataque
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="../rammus/icons/p2.png">
+                <h2>Bolinha</h2>
+                <h3>Rammus se torna um bolinha que ganha velocidade com o tempo e assim capaz de stunar todos seus adversarios com seu poder esmagador  
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="../rammus/icons/p3.png">
+                <h2>Espinhos</h2>
+                <h3>Rammus entra em modo de combate, visando que o melhor ataque é a defesa, se tornando uma bola de espinho movel destruindo por onde passa
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="../rammus/icons/p4.png">
+                <h2>Provocar</h2>
+                <h3>Rammus provoca seus adversarios com palavras pesada como OK e xingando sua mãe
+                </h3>
+            </div>
+            <div class="feature">
+                <img src="../rammus/icons/p5.png">
+                <h2>Tremor</h2>
+                <h3>Rammus Treme nas bases fazendo que o proprio chão tema o seu poder e fica instavel por onde ele passa
+                </h3>
+            </div>
+        </section>
+        <section class="rammao">
+            <img src="../rammus/1.png" class="rammao_img">
+            <div class="rammao__detalhes">
+                <h1>Rammus, O Tatu blindadão</h1>
+                <p> Idolatrado por muitos, amado por alguns e misterioso para todos, Rammus é um ser poderoso e enigmático.
+                    Protegido por um casco espinhoso, ele inspira teorias cada vez mais divergentes sobre sua origem por onde quer que passe
+                    De semideus, a oráculo sagrado, a uma fera qualquer que foi transformada por magia.
+                    Qualquer que seja a verdade,Rammus mantém seus aspectos e nunca será abalado por ninguem que passe por seu caminho...</p>
+                <button>>> Ler toda historia <<</button>
+             </div>
+        </section>
+        <section class="gallery">
+            <h2>
+                Skins do Rammus
+            </h2>
+            <img src="../rammus/skins/rammus1.png" alt="">
+            <img src="../rammus/skins/rammus2.png" alt="">
+            <img src="../rammus/skins/rammus3.png" alt="">
+            <img src="../rammus/skins/rammus4.png" alt="">
+            <img src="../rammus/skins/rammus5.png" alt="">
+            <img src="../rammus/skins/rammus6.png" alt="">
+        </section>
+   
+   
+   
+        
+    </div>
+
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+        
+        function toggleNav({ target }){
+
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false; 
+            navButton.setAttribute('aria-expanded',!expanded);
+
+        }
+
+        navButton.addEventListener('click', toggleNav);
+
+    </script>
+</body>
+
+</html>
